@@ -25,7 +25,7 @@ def health():
 
 @router.get("/items")
 def list_items():
-    """GET all items."""
+    """GET all items in the database."""
     return {"items": list(items_db.values())}
 
 
