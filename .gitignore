@@ -1,6 +1,9 @@
 # Old root venv (backend uses backend/.venv now – safe to delete .venv here)
 .venv/
 
+# Local env (Compose); keep .env.example tracked
+.env
+
 # OS
 .DS_Store
 Thumbs.db
