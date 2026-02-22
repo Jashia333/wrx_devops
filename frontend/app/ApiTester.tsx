@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
@@ -115,12 +114,9 @@ export default function ApiTester() {
 
   return (
     <div className="container">
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "1rem" }}>
-        <div>
-          <h1 className="pageTitle">WRX API</h1>
-          <p className="sub">Input → request → Output. Backend: {API_BASE}</p>
-        </div>
-        <Link href="/login" style={{ color: "var(--post)", fontWeight: 600, textDecoration: "none" }}>Sign in</Link>
+      <div>
+        <h1 className="pageTitle">WRX API</h1>
+        <p className="sub">Input → request → Output. Backend: {API_BASE}</p>
       </div>
 
       <div className="flow">
